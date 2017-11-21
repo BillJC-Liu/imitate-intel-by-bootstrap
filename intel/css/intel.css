@@ -1,0 +1,87 @@
+.main{
+	width: 100%;
+	padding-top: 50px;
+}
+
+/* pic one */
+
+.big-pic-one{
+	height: auto;
+	background: #000;
+	position: relative;
+}
+.big-pic-one section{
+	background: url(../images/1.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+}
+
+@media screen and (max-width: 768px){
+	.big-pic-one section{
+		height: 400px;
+	}
+}
+
+.title-tools-container .pageheader h1{
+		font-size: 2em;
+}
+.masthead-container .masthead-content{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+	.masthead-container{
+		width: 100%;
+		position: absolute;
+		bottom:0;
+	}
+}
+
+.masthead-container .masthead-content h2{
+	font-size: 4.5em;
+	/*font-weight: 700;*/
+	font-family: intel-clear-headline, intel-clear, SimHei, SimSun, Arial, sans-serif!important;
+}
+@media (max-width: 1199px) and (min-width: 768px){
+	.masthead-container .masthead-content h2{
+		font-size: 3em;
+	}
+	.title-tools-container .pageheader h1{
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 768px){
+	.masthead-container .masthead-content h2{
+		font-size: 2em;
+	}
+	.title-tools-container .pageheader h1{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.masthead-container .masthead-content h2{
+		font-size: 1em;
+	}
+}
+
+/* pic one 结束*/
+
+/* pic two */
+.big-pic-two{
+	height: auto;
+	background: #000;
+	position: relative;
+}
+.big-pic-two section{
+	background: url(../images/2.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+}
+
+/* pic two 结束*/

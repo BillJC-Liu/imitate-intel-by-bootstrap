@@ -1,0 +1,104 @@
+@import "less/bootstrap.less";
+body{
+  margin-top:@navbar-height;
+}
+.main{
+  background: @blue-dark;
+  	> .container:first-child > h2:first-child{
+	   color: @text-color-light;
+  	}
+}
+@logo-height:50px;
+
+.brand-logo{
+	background: url(../images/15.png) no-repeat;
+	background-position: -332px -430px;
+	display: block;
+	width: 64px;
+    height: @logo-height;
+  	margin-top:floor((@navbar-height - @logo-height) / 2 );
+}
+.modal{
+  color: @text-color-light;
+}
+.modal-content{
+  margin-top:62px;
+}
+.modal-especial-word a{
+  color: #9addf7;
+}
+.modal-especial-word a:hover{
+  color: #0071c5
+}
+.modal-text-margin-top{
+	margin-top: 10px;
+}
+.masking-parent{
+	position: relative;
+}
+.masking-parent-onepic-bg{
+	background: #000;
+}
+.masking-text{
+	position: absolute;
+}
+.masking-one-text{
+	padding-left: 20px;
+	padding-bottom: 20px;
+	color: #fff ;
+	width: 70%;
+	bottom: 0;
+}
+.mask{
+	position: relative;
+	overflow:hidden;
+}
+.mask-desc{
+	position: absolute;
+	top: 82%;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	padding:0px 15px 15px 15px;
+	transition: .2s linear;
+}
+.mask-desc:hover{
+	top:0;
+}
+.masking-parent-twopic-bg{
+	background: #f9f9f9;
+}
+.masking-two-text{
+	width: 48%;
+	right:0;
+	top:20%;
+  	padding-right: 15px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.masking-parent-threenpic-bg{
+	background: #000;
+}
+.masking-threen-text{
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 15px;
+	color: #fff ;
+	width: 50%;
+	top:25%;
+	right:0;
+}
+footer{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+@media (max-width: 768px){
+	/*手机屏幕 大图中的文字 移动到大图下面*/
+	.masking-text{
+		position: relative;
+	}
+}
+
+

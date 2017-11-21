@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>bootstrap-project</title>
+	<!--<link rel="stylesheet" href="bootstrap-3.3.7/less/bootstrap.css">-->
+	<link rel="stylesheet" href="css/intel.css">
+	<!-- <link rel="stylesheet" href="css/iconfont/iconfont.css"> -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<style>
+		div{
+			/*border:1px solid #000;*/
+		}
+	</style>
+</head>
+<body>
+	<!-- 导航条 -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- 头部 -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar">三</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="brand-logo"></a>
+			</div>
+			<!-- 隐藏的 collapse -->
+			<div class="collapse navbar-collapse " id="navbar-collapse" >
+				<!-- 左边的菜单 -->
+				<ul class="nav navbar-nav">
+					<li><a href="#">主页</a></li>
+					<li><a href="#">新闻</a></li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">菜单<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Product</a></li>
+							<div class="divider"></div>
+							<li class="disable"><a href="#">Our</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- 右边的菜单 -->
+				<ul class="nav navbar-nav navbar-right ">
+					<li><a href="#" >简体中文</a></li>
+					<li><a href="#login_modal" data-toggle="modal">登录</a>
+					</li>
+				</ul>
+
+				<!-- 搜索框 -->
+				<form action="" class="navbar-form navbar-right" >
+					<div class="form-group has-feedback">
+						<label for="kw" class="sr-only">搜索关键字</label>
+						<input id="kw" type="text" class="form-control" placeholder="search...">
+						<span class="glyphicon glyphicon-search form-control-feedback"></span>
+					</div>
+				</form>
+				<!-- 竖线 -->
+				<span class="navbar-text navbar-right hidden-xs hidden-sm">|</span>
+				<!-- a link -->
+				<a href="#" class="navbar-text navbar-right navbar-link">查找更多内容</a>
+			</div>
+		</div>
+	</nav>
+	<!-- 导航条  结束 -->
+	<!-- 登录的模态框 -->
+	<div class="modal fade " id="login_modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="modal-title">
+						<h1>登录</h1>
+					</div>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="container-fluid">
+							<div class="form-group">
+
+								<div class="row">
+									<div class="col-md-12">
+										<input type="text" class="form-control" placeholder="UserName">
+									</div>
+								</div>
+
+								<div class="row modal-text-margin-top">
+									<div class="col-md-12">
+										<input id="gree" type="passworld" class="form-control"  placeholder="passworld">
+										<label for="gree" class="modal-text-margin-top">您登录说明您同意我们的&nbsp;<span
+												class="modal-especial-word"><a href="#">服务条款</a></span></label>
+									</div>
+								</div>
+
+								<div class="row modal-text-margin-top">
+									<div class="col-md-4">
+										<button type="button" class="btn btn-info btn-block">登录</button>
+									</div>
+									<div class="col-md-3 pull-right"><input type="checkbox">记住我</div>
+								</div>
+								<div class="row modal-text-margin-top">
+									<div class="col-md-12">
+										<h5>忘记了您的英特尔&nbsp;<span class="modal-especial-word"><a href="#">用户名</a>&nbsp;</span>或&nbsp;<span
+												class="modal-especial-word"><a href="#">密码</a></span>?</h5>
+									</div>
+									<div class="col-md-12">
+										您是否在英特尔工作？ &nbsp;<span class="modal-especial-word"><a href="#">在此登录</a></span>.
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 主体部分 -->
+	<div class="main">
+		<div class="container">
+			<h2>欢迎来到英特尔&copy;</h2>
+			
+			<div class="row">
+				<!--大图 图片 文字 -->
+				<div class="col-md-8 col-xs-12">
+					<div class="masking-parent masking-parent-onepic-bg">
+
+						<img src="images/1.jpg" alt="" class="img-responsive">
+
+						<div class="masking-text masking-one-text">
+							<h3>电脑换新就要快</h3>
+
+							<p>全新第六代英特尔酷睿处理器家族，以强大性能与智能技术，释放您的双手带来前所未有的人机交互方式，快来体验自由无拘束。</p>
+							
+							<button type="button" class="btn btn-info">换新电脑，就是现在。</button>
+
+						</div>	
+
+					</div>
+				</div>
+				<!-- 小图 -->
+				<div class="col-md-4 col-xs-12">
+					<div class="row">
+						<div class="col-md-12 col-xs-6">
+							<div class="mask">
+								<img src="images/4.jpg" alt="" class="img-responsive">		
+								<div class="mask-desc">
+									<h5>解密2合1电脑</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ratione nam placeat sed unde ipsum error at, </p>
+								</div>
+							</div>		
+						</div>
+						<div class="col-md-12 col-xs-6">
+							<div class="mask">
+								<img src="images/7.jpg" alt="" class="img-responsive">		
+								<div class="mask-desc">
+									<h5>解密2合1电脑</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ratione nam placeat sed unde ipsum error at, </p>
+								</div>
+							</div>				
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- 列的排序 -->
+				<!-- 大图 -->
+				<div class="col-md-8  col-md-push-4 col-xs-12">
+
+					<div class="masking-parent masking-parent-twopic-bg">
+
+						<img src="images/2.jpg" alt="" class="img-responsive">
+
+						<div class="masking-text masking-two-text">
+
+							<h3>电脑换新就要快</h3>
+
+							<p>全新第六代英特尔酷睿处理器家族，以强大性能与智能技术，释放您的双手带来前所未有的人机交互方式，快来体验自由无拘束。</p>
+							
+							<button type="button" class="btn btn-info">换新电脑，就是现在。</button>
+						</div>
+
+					</div>
+				</div>
+				<!-- 小图 -->
+				<div class="col-md-4  col-md-pull-8 col-xs-12">
+					<div class="row">
+						<div class="col-md-12 col-xs-6">
+							<div class="mask">
+								<img src="images/8.jpg" alt="" class="img-responsive">		
+								<div class="mask-desc">
+									<h5>解密2合1电脑</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ratione nam placeat sed unde ipsum error at, </p>
+								</div>
+							</div>			
+						</div>
+						<div class="col-md-12 col-xs-6">
+							<div class="mask">
+								<img src="images/9.jpg" alt="" class="img-responsive">		
+								<div class="mask-desc">
+									<h5>解密2合1电脑</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ratione nam placeat sed unde ipsum error at, </p>
+								</div>
+							</div>				
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<!-- 大图 -->
+				<div class="col-md-8 col-xs-12">
+					<div class="masking-parent masking-parent-threenpic-bg">
+						<img src="images/5.jpg" alt="" class="img-responsive">
+						<div class="masking-text masking-threen-text">
+							<h3>电脑换新就要快</h3>
+
+							<p>全新第六代英特尔酷睿处理器家族，以强大性能与智能技术，释放您的双手带来前所未有的人机交互方式，快来体验自由无拘束。</p>
+							
+							<button type="button" class="btn btn-info">换新电脑，就是现在。</button>
+						</div>
+
+					</div>		
+				</div>
+				<!-- 小图 -->
+				<div class="col-md-4 col-xs-12">
+					<div class="row">
+						<div class="col-md-12 col-xs-6">
+							<div class="mask">
+								<img src="images/11.jpg" alt="" class="img-responsive">		
+								<div class="mask-desc">
+									<h5>解密2合1电脑</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ratione nam placeat sed unde ipsum error at, </p>
+								</div>
+							</div>			
+						</div>
+						<div class="col-md-12 col-xs-6">
+							<div class="mask">
+								<img src="images/12.jpg" alt="" class="img-responsive">		
+								<div class="mask-desc">
+									<h5>解密2合1电脑</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ratione nam placeat sed unde ipsum error at, </p>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 主体部分  结束-->
+
+
+
+	<!-- 页脚 -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-sm-6 col-xs-12">
+							<h5>关于英特尔</h5>
+							<ul class="list-unstyled">
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								
+							</ul>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<h5>关于英特尔</h5>
+							<ul class="list-unstyled">
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-sm-6 col-xs-12">
+							<h5>关于英特尔</h5>
+							<ul class="list-unstyled">
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<h5>关于英特尔</h5>
+							<ul class="list-unstyled">
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">首页</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- 页脚  结束-->
+
+</body>
+</html>
